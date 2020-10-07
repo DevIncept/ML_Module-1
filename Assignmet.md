@@ -1,3 +1,3 @@
-Your task is to perform Exploratory Data Analysis of [Iris Flower Dataset](https://www.kaggle.com/arshid/iris-flower-dataset#).&nbsp
-The dataset contains a set of 150 records under 5 attributes - Petal Length, Petal Width, Sepal Length, Sepal width and Class(Species)&nbsp
-Please do your Exploratory Data Analysis and write your observations and interpretation.&nbsp
+Your task is to perform Exploratory Data Analysis of [Iris Flower Dataset](https://www.kaggle.com/arshid/iris-flower-dataset#). &nbsp
+The dataset contains a set of 150 records under 5 attributes - Petal Length, Petal Width, Sepal Length, Sepal width and Class(Species) &nbsp
+Please do your Exploratory Data Analysis and write your observations and interpretation. &nbsp
