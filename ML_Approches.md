@@ -99,8 +99,6 @@ Thats when the current known mini-approach needs to undergo some mature changes
      Very straightforward - create,run and test your model on the testing data. Keep in mind that there are tons of evaluation criteria to compare which model is the best of 
      all apart from accuracy metrics. Select your model by choosing your eveluation metrics wisely.
      Here area few basic metrics to explore:
-     
-     ![](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/How-to-Choose-a-Metric-for-Imbalanced-Classification-latest.png)
       
   -  **Tweak the chosen model**
   
