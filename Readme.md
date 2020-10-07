@@ -9,5 +9,4 @@
 9. [Part4:Preprocessing](Data_Preprocessing.md)
 10. [Part5: Data Visualization ](EDA.md)
 11. [Part5: Visualization Notebook](EDA.ipynb)
-12. [Part6: Project: Gradebook using numpy and pandas](Part6-gradebook.md)
-13. [Part6: Project: Gradebook](Part6-gradebook.ipynb)
+12. [Part6: Assignment](Assignment.md)
