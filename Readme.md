@@ -17,4 +17,4 @@ Main aim of this training program is to provide you a path you have to work on, 
 10. [Part5: Data Visualization ](EDA.md)
 11. [Part5: Visualization Notebook](EDA.ipynb)
 12. [Part6: Assignment](Assignment.md)
-13. Part6: Competetion-Numpy&Pandas - Will be held on Sunday
+13. Part9: **Quizz** **`compulsory for completion`** *(link will be shared on Slack on Monday)* 
