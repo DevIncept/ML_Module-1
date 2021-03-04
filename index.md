@@ -7,7 +7,7 @@ Main aim of this training program is to provide you a path you have to work on, 
 
 1. [Part1: Introduction to Machine Learning ](ML_Introduction.md)
 2. [Part1: Approching ML problems ](ML_Approches.md)
-3. [Part2: Numpy](numpy.html)
+3. [Part2: Numpy](numpy.md)
 4. [Part2: Numpy Notebook](Numpy.ipynb)
 5. [Part3: Pandas](Pandas.md)
 6. [Part3: Pandas Notebook](Pandas.ipynb)
