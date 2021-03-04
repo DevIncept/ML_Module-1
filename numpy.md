@@ -54,9 +54,9 @@ A multi-dimensional array is an array with more than one level or dimension. For
 
 Example:
 
-      int two_d[10][20];
-      int x[3][4] = {{0,1,2,3},{4,5,6,7},{8,9,10,11}};
-      char y[3][4] = {{'a','b','c','d'}, {'D','e','V','I'}, {'n','c','e','p'}};
+      "int two_d[10][20];"
+      "int x[3][4] = {{0,1,2,3},{4,5,6,7},{8,9,10,11}};"
+      "char y[3][4] = {{'a','b','c','d'}, {'D','e','V','I'}, {'n','c','e','p'}};"
 
 > To access the elements of a **multi-dimensional** Array you can use the **indexes** and most of the Arrays are **zero-indexed.**
 
