@@ -52,16 +52,7 @@ A multi-dimensional array is an array with more than one level or dimension. For
 
 ![2-D Array](https://cdn.programiz.com/sites/tutorial2program/files/2d-array-variable-length.jpg)
 
-Example:
 
-      "int two_d[10][20];"
-      "int x[3][4] = {{0,1,2,3},{4,5,6,7},{8,9,10,11}};"
-      "char y[3][4] = {{'a','b','c','d'}, {'D','e','V','I'}, {'n','c','e','p'}};"
-
-> To access the elements of a **multi-dimensional** Array you can use the **indexes** and most of the Arrays are **zero-indexed.**
-
-      x[0][1]; # gives us 1
-      y[1][2]; # gives us V
 
 > You can access elements in a multi-dimensional like in the example showed above..
 
