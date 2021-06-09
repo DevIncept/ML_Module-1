@@ -7,14 +7,15 @@ Main aim of this training program is to provide you a path you have to work on, 
 
 1. [Part1: Introduction to Machine Learning ](ML_Introduction.md)
 2. [Part1: Approching ML problems ](ML_Approches.md)
-3. [Part2: Numpy](numpy.md)
-4. [Part2: Numpy Notebook](Numpy.ipynb)
-5. [Part3: Pandas](Pandas.md)
-6. [Part3: Pandas Notebook](Pandas.ipynb)
-7. [Part4:Feature Scaling](Feature_Scaling.md)
-8. [Part4:Feature Scaling Notebook](Feature_Scaling.ipynb)
-9. [Part4:Preprocessing](Data_Preprocessing.md)
-10. [Part5: Data Visualization ](EDA.md)
-11. [Part5: Visualization Notebook](EDA.ipynb)
-12. [Part6: Assignment](Assignment.md)
-13. Part9: **Quizz** **`compulsory for completion`** *(link will be shared on Slack on Monday)* 
+3. <a href="https://www.youtube.com/watch?v=Q-iC4VaW8ZA" target="_blank">Starting with Anaconda 3<a>
+4. [Part2: Numpy](numpy.md)
+5. [Part2: Numpy Notebook](Numpy.ipynb)
+6. [Part3: Pandas](Pandas.md)
+7. [Part3: Pandas Notebook](Pandas.ipynb)
+8. [Part4:Feature Scaling](Feature_Scaling.md)
+9. [Part4:Feature Scaling Notebook](Feature_Scaling.ipynb)
+10. [Part4:Preprocessing](Data_Preprocessing.md)
+11. [Part5: Data Visualization ](EDA.md)
+12. [Part5: Visualization Notebook](EDA.ipynb)
+13. [Part6: Assignment](Assignment.md)
+14. Part9: **Quizz** **`compulsory for completion`** *(link will be shared on Slack on Monday)* 
