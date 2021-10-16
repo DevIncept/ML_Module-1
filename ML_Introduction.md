@@ -3,7 +3,7 @@
 __Machine Learning__ has become a buzzword in the field of technology nowadays. There is race among enterprises to add functionalities in their operations by using machine learning. This has also increased the opportunities for aspiring data scientists. So having knowledge of machine learning is crucial at this moment for every tech enthusiast.
 
 **Machine Learning in simple words is teaching computers to learn by themselves without explicitly programming them so that they can perform various repetitive tasks by themselves.** Since machines never get
-tired like humans they can do tasks for longer time. Machines learn when we teach them the pattern of doing any work. They start learning by themselves when they start recoignizing the pattern.
+tired like humans they can do tasks for longer time. Machines learn when we teach them the pattern of doing any work. They start learning by themselves when they start recognizing the pattern.
 
 For example, the task of filling water in the tank whenever the tank gets empty. If we teach the machine to detect whether the tank is empty or full and start the motor whenever the tank is empty, it would do this repetitive task on its own. Similarly we can also teach it to stop the motor whenever the tank is full by detecting the water level in the tank.
 
@@ -22,11 +22,11 @@ For example, the task of filling water in the tank whenever the tank gets empty.
 
 3. ### Making the data consistent
 
-    ```The data should be formatted so that it fits our machine learning model. There is irregualrity in the data when it is collected from different sources. There can also be aberration in the datasets if it has been collected by more than one person. There is decrease in errors when the data is formatted consistently.```
+    ```The data should be formatted so that it fits our machine learning model. There is irregularity in the data when it is collected from different sources. There can also be aberration in the datasets if it has been collected by more than one person. There is decrease in errors when the data is formatted consistently.```
 
 4. ### Deciding important key factors
 
-     ```It is the job of our model to decide which feature is important and which is not on the basis of its affect on the output. We can simply provide the data sets and let the machine do it's job.But doing this consumes more power and time. So we can help our model by not feeding the features that are unrelated to the output.```
+     ```It is the job of our model to decide which feature is important and which is not on the basis of its effect on the output. We can simply provide the data sets and let the machine do it's job.But doing this consumes more power and time. So we can help our model by not feeding the features that are unrelated to the output.```
 
 5. ### Splitting data into training and testing sets
 
@@ -40,7 +40,7 @@ In this way we build our machine learning model by following the above mentioned
 
 Machine Learning has numerous applications in our daily life. We see the use of machine learning everyday but are not aware of it. Some examples where machine learning is applied are:
 ```
-1. Face detection and finger print detection in our smartphones for unlocking our devices
+1. Face detection and fingerprint detection in our smartphones for unlocking our devices
 2. Recommendations in social media sites on the basis of our browsing history
 3. Fraud transactions detection system used by banks
 4. Netflix movies recommendation on the basis of our watch history
