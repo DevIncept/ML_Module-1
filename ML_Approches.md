@@ -74,7 +74,6 @@ Exploratory data analysis is the process of analyzing and interpreting datasets 
 
 ![shape](images/shape.png)
 
-![pimaHead](pima_head.png)
 
 
 
