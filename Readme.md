@@ -10,7 +10,7 @@ Main aim of this training program is to provide you a path you have to work on, 
 3. [video2: Introduction to Machine Learning ](https://youtu.be/4cEyIn9i3yc)📹
 4. [Part1: Approching ML problems ](ML_Approches.md)📓
 5. [Video: Approching ML problems ](https://youtu.be/5QxZB-4xQrg)📹
-6. <a href="https://www.youtube.com/watch?v=Q-iC4VaW8ZA" target="_blank">Starting with Anaconda 3<a>
+6. <a href="https://www.youtube.com/watch?v=Q-iC4VaW8ZA" target="_blank">Starting with Anaconda 3<a>📹
 7. [Part2: Numpy](numpy.md)📓
 8. [Video1: Numpy](https://youtu.be/2FlT8lIT6MI)📹
 9. [Video2: Numpy](https://youtu.be/Lbmryq2Tcrw)📹
