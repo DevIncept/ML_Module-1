@@ -1,280 +1,307 @@
+# DevIncept Internship (ML-6)
+
+
 # Data Preprocessing in Machine Learning
+   <img src="https://d33wubrfki0l68.cloudfront.net/ef9037172858e9d72c032c8f10eb952a81765a9c/bc453/static/f63c42dedc9dae7e8e0b6190a0a88f2f/28bdc/garbage-in.png">
+  Now-a-day mostly everything depends upon the Data and when that data is converted into information it leads to major changes and profit for the community.
+  But what if the data gathered itself is not proper for the Analysis?
+  That is when need for Data preprocessing arises.
+  Machine learning algorithms are data-hungry. But there’s a catch. They need data in a specific format.
+  Data preprocessing is the most important phase of a Machine Learning project.
+ 
+## Need for Data Preprocessing?
+  Collecting data from number of sources results in out-of-range values, impossible data combination, missing values, etc. Analyzing this kind of data that has not been prepared     properly for analysis can lead to misleading results. For achieving better results from the applied model in Machine Learning projects the format of the data has to be in a       proper manner.If there is much irrelevant and redundant information present or noisy and unreliable data, then knowledge discovery during   the training phase is more difficult.   The product of data preprocessing is the final training set. It also helps to select the most efficient model in Machine Learning.
 
-## What is Data Preprocessing?
+  
+## What is Data Preprocessing and steps involved in it?
+  The process of cleaning raw data for it to be used for machine learning activities and analysis is known as data pre-processing. It’s the first and foremost step while doing a     machine learning project. Data preprocessing bascially helps us to get rid of the issues(missing values, outliers, null vlaues, etc) that can affect our analysis.
+  
+## Steps involved in data preprocessing:
+  #### 1. *Data Collection*
+  #### 2. *Importing Libraries*
+  #### 3. *Importing the dataset*
+  #### 4. *Data quality assessment*
+  #### 5. *Data cleaning*
+  #### 6. *Data transformation*
+  #### 7. *Splitting of dataset*
+  #### 8. *Feature Scaling*
+  
+### Now let us discuss each step furthur:
 
- Data Preprocessing is a technique that is used to convert the raw data into a clean data set. It is the most important step to oraganize the data into meaningful manner. Its   main aim is to produce clean and efficient code so that it can be easily be understood by machine.
- It also helps to reduce the time while analyzing the data and also improves to understand the code and increase readability.
+### *1. Data Collection*
+   There are many types of data collection: surveys, phone calls, records, forms, clinical studies, and etc. You could either get it from a primary source (the data your company    collects through various means) or a secondary source (government data sets or online repositories).
+   Think about the goal of your analysis to get an idea of what kind of data you need to acquire.Once the data is collected, comes the next stage of the analysis: the data          preparation process.
 
-## Why Data Preprocessing?
-
- Since now-a-days thw world highly depends upon data and the data needs to be organised in appropriate manner.Data preprocessing helps in the real-world data to store efficiently and thereby making it ready-to-go for Machine Learning Models.
- It also helps to select the most efficient model in Machine Learning.
-
-# Various Steps in Data Preprocessing in Machine Learning.
-
-## 1. Importing the libraries.
-
-  #### The predefined Python libraries can perform specific data preprocessing jobs.
-  #### The three core Python libraries used for this data preprocessing in Machine Learning are:
-
-## a. Numpy
-   
-    import numpy as np
-   
-  It is the fundamental library which is used for the scientific calculations and is widely used. 
-  It is mainly used to deal with large multidimensional arrays and matrices in the code.
-   
-## b. Matplotlib
-   
-    import matplotlib.pyplot as plt
+### *2. Importing the Libraries*
     
-   It is a library which is used to plot any type of charts and graphs across any platform like: 
-   Jupyter Notebook or Web Application Servers.
-   It helps to easily visualize the data.
+   <img src="https://hackernoon.com/_next/image?url=https%3A%2F%2Fcdn.hackernoon.com%2Fhn-images%2F1*b6Cgl3KeqfwsAKnXqxXw5g.png&w=1920&q=75">
     
-## c. Pandas
-    
-    import pandas as pd
+   In order to perform data preprocessing using Python, we need to import some predefined Python libraries. These libraries are used to perform some specific jobs. There are        three specific libraries that we will use for data preprocessing, which are:
+   #### Numpy: 
+   Numpy Python library is used for including any type of mathematical operation in the code. It is the fundamental package for scientific calculation in Python. It also            supports to add large, multidimensional arrays and matrices. So, in Python, we can import it as:
      
-   Pandas is an excellent open-source Python library for data manipulation and analysis. 
-   It is extensively used for importing the Dataset and also create matrix of features and dependent variables.
-    
-## 2. Importing the Dataset
+     import numpy as np
+   Here we have used np, which is alias for Numpy, and it will be used in the whole program.  
+   
+  #### Pandas:
+  The Pandas library, which is one of the most famous Python libraries and used for importing and managing the datasets. It is an open-source data manipulation and analysis       library. It will be imported as below:
+  
+    import pandas as pd
+   Here we have used pd, which is alias for Pandas, and it will be used in the whole program. 
+   
+  #### Matplotlib:
+   The  matplotlib, which is a Python 2D plotting library, and with this library, we need to import a sub-library pyplot. This library is used to plot any type    of charts in      Python for the code. It will be imported as below: 
+     
+     import matplotlib.pyplot as plt
+   Here we have used plt, which is alias for Matplotlib, and it will be used in the whole program.  
 
-<img src="https://miro.medium.com/max/400/1*eWtGdqsEXCnX_ZiVw2Ba0g.png">
+### *3. Importing the dataset*
+    
+   <img src="https://hackernoon.com/_next/image?url=https%3A%2F%2Fcdn.hackernoon.com%2Fhn-images%2F1*gMhwiQKCV1qya7G1QU7eXQ.png&w=1920&q=75">
+   
+   Now we need to import the datasets which we have collected for our machine learning project. Data can be in any of the popular formats - CSV, TXT, XLS/XLSX (Excel),etc.
+   Check whether header row exists or not.
+   
+   #### importing csv file
+   It is important to note that a singlebackslash does not work when specifying the file path. You need to either change it to forward slash or add one more backslash like          below
+     
+    (name for the dataset)= **pd.read_csv**("(url of the file)")
+   #### Importing file from url 
+   You don't need to perform additional steps to fetch data from URL. Simply put URL in read_csv() function (applicable only for CSV files stored in URL).
+     
+    mydata = pd.read_csv("http://winterolympicsmedals.com/medals.csv")
+    
+   #### Reading text file 
+   We can use read_table() function to pull data from text file. We can also use read_csv() with sep= "\t" to read data from tab-separated file.
+     
+    mydata = pd.read_table("C:\\Users\\Deepanshu\\Desktop\\example2.txt")
+    mydata = pd.read_csv("C:\\Users\\Deepanshu\\Desktop\\example2.txt", sep ="\t")
+  
+  #### Reading excel file
+   The read_excel() function can be used to import excel data into Python.
+     
+### *4. Data quality assessment*
 
-  Here we need to import the datasets which we have collected for our machine learning project.
+  Take a good look at your data and get an idea of its overall quality, relevance to your project, and consistency. There are a number of data anomalies and inherent problems to   look out for in almost any data set, for example:
   
-  **Steps for Importing Data set in Jupyter notebook**
-  
-  1. Click on upload to upload the data from our pc.
-  2. Make sure your file has .csv extention (**i.e. Data.csv**)
-  3. The file should be uploaded in the same folder as that of source code.
-  4. Now save the file in the same directory where all the other files have been stored.
-  
-  <img src="https://i.stack.imgur.com/wTjKQ.png" height="500" width="700">
-  
-  read_csv() function:
-  
-  Now to import the dataset, we will use read_csv() function of pandas library, which is used to read a csv file and performs various operations on it. 
-  read_csv() function can be used as follows:
-  
-    dataset= pd.read_csv("Name of the data.csv")
-    
-### Extracting Dependent and Independent Variable
-   
-   **Independent Variable:** Independent variables are the input for a process that is being analyzes basically referred as Features and here we are denoting it by **x**.
-   
-   **Dependent Variables:** Dependent variables are the output of the process, like for example whether we have purchased the product or not and here we are denoting it by **y**.
-   
-   **Extracting Independent Variable:** Here in order to extract the variable iloc[] method of pandas library is used and extract rows and columns of the data set.
-    
-    x= dataset.iloc[:,:-1].values
-    
-   **Extracting Dependent Variable:** Here in order to extract the variable again iloc[] method of pandas library is used.
-   
-    y= dataset.iloc[:,:-1].values
-    
- ## 3. Handling missing Data
+   * Mismatched Data types:  When you collect data from many different sources, it may come to you in different formats. 
+   * Mixed data values: Perhaps different sources use different descriptors for features – for example, man or male. These value descriptors should all be made uniform.
+   * Data outliers: Outliers can have a huge impact on data analysis results.Check for extreme and unusual values.
+   * Missing data: Take a look for missing data fields, blank spaces in text. This could be due to human error or incomplete data.
  
-   It is the most important step in data preprocessing, since if any of the data is missing in data set it will create a huge problem.
-   
-   There are mainly two ways to handle missing data, which are:
+### *5. Data Cleaning*
 
-   **By deleting the particular row:** The first way is used to commonly deal with null values. In this way, we just delete the specific row or column which consists of null values. But this way is not so efficient and removing data may lead to loss of information which will not give the accurate output.
-
-   **By calculating the mean:** In this way, we will calculate the mean of that column or row which contains any missing value and will put it on the place of missing value. This strategy is useful for the features which have numeric data such as age, salary, year, etc. Here, we will use this approach.
-   
-   <img src="https://mk0analyticsindf35n9.kinstacdn.com/wp-content/uploads/2018/02/missing-values.png">
-
-   To handle missing values, we use Scikit-learn library in our code, which contains various libraries for building machine learning models. Lets see how to use it. 
-   
-    from sklearn.impute import SimpleImputer
-    imputer = SimpleImputer(missing_values=np.nan,strategy="mean")
-    imputer.fit(x[:,1:3])
-    x[:,1:3]=imputer.transform(x[:,1:3])  
-    print(x)
-    
-  ### Now the Missing data can also be handled using one of the pandas library method i.e. **fillna method**. 
-   
-   **The fillna() function is used to fill NA/NaN values using the specified method.**
-   
-   **For example-**
-   
-   *Suppose we have a data set-*
-   
-|      |Date     |Temperature|Windspeed|Event    | 
-|------|---------|---------- |---------|---------|
-|  0   |07-09-20 |  32.0     | 6.0     |   Rain  |
-|  1   |08-09-20 |   NaN     |  9.0    |   Sunny |
-|  2   |09-09-20 |   28.0    |  NaN    |   Snow  |
-|  3   |10-09-20 |  NaN      |  7.0    |    NaN  |
-|  4   |11-09-20 |   32.0    |  Nan    |    Rain |
-
-Now by using different parameters-
-
-  1. **df.fillna(0)** - To fill the NaN values by a specified value.
+  Data cleaning is the process of adding missing data and correcting, repairing, or removing incorrect or irrelevant data from a data set. Data cleaning is the most important     step of preprocessing because it will ensure that your data is ready to go for your downstream needs.
+  Data cleaning will correct all of the inconsistent data you uncovered in your data quality assessment. Depending on the kind of data you’re working with, there are a number of   possible cleaners you’ll need to run your data through.
   
-          newData = df.fillna(0)
-          newData
+   #### * Remove unwanted data
+   
+  The first step to data cleaning is removing unwanted observations from your dataset.This includes duplicate or irrelevant observations.Duplicate observations most               frequently arise during data collection, such as when you: Combine datasets from multiple places, Scrape data, Receive data from clients/other departments. Irrelevant           observations are those that don’t actually fit the specific problem that you’re trying to solve. For this performing EDA is best to take a look on this kind of data.
   
- |      |Date     |Temperature|Windspeed|Event    | 
- |------|---------|---------- |---------|---------|
- |  0   |07-09-20 |  32.0     | 6.0     |   Rain  |
- |  1   |08-09-20 |   0.0     |  9.0    |   Sunny |
- |  2   |09-09-20 |   28.0    |  0.0    |   Snow  |
- |  3   |10-09-20 |  0.0      |  7.0    |    0.0  |
- |  4   |11-09-20 |   32.0    |  0.0    |    Rain |
-
- 2. **df.fillna({dictionary})** - Here we can pass any dictionary and the columns will change accordingly.
- 
-        newData = df.fillna({
-           'Temperature' : 0,
-           'Windspeed' : 0,
-           'Event' : 'No Event'
-        })
-        newData
-        
-|      |Date     |Temperature|Windspeed|Event    | 
-|------|---------|---------- |---------|---------|
-|  0   |07-09-20 |  32.0     | 6.0     |   Rain  |
-|  1   |08-09-20 |   0.0     |  9.0    |   Sunny |
-|  2   |09-09-20 |   28.0    |  0.0    |   Snow  |
-|  3   |10-09-20 |  0.0      |  7.0    | No Event|
-|  4   |11-09-20 |   32.0    |  0.0    |    Rain |
-
-3. **df.fillna(method="")** - This method fills the *previous row's* value.
-
-       newData = df.fillna(method= "ffill")
-       newData
+   #### * Fix Structural Errors
+   
+  Structural errors are those that arise during measurement, data transfer, or other types of "poor housekeeping".For instance, we can check for typos or inconsistent             capitalization. Check for mislabeled classes, i.e. separate classes that should really be the same.
+  for eg.
+         If ’N/A’ and ’Not Applicable’ appear as two separate classes, you should combine them.
+         ’IT’ and ’information_technology’ should be a single class.
+      
+   #### * Handling Outliers
+   
+   In statistics, an outlier is an observation point that is distant from other observations.They may be due to variability in the measurement or may indicate experimental          errors.If possible, outliers should be excluded from the data set. Outliers can be of two kinds: univariate and multivariate. Univariate outliers can be found when looking      at a distribution of values in a single feature space. Multivariate outliers can be found in a n-dimensional space (of n-features).
        
-|      |Date     |Temperature|Windspeed|Event    | 
-|------|---------|---------- |---------|---------|
-|  0   |07-09-20 |  32.0     | 6.0     |   Rain  |
-|  1   |08-09-20 |   32.0    |  9.0    |   Sunny |
-|  2   |09-09-20 |   28.0    |  9.0    |   Snow  |
-|  3   |10-09-20 |  28.0     |  7.0    | Snow    |
-|  4   |11-09-20 |   32.0    |  7.0    |    Rain |
-
-
-4. **df.fillna(method="")** - This method fills the *next row's* value.
-
-       newData = df.fillna(method= "bfill")
-       newData
-       
-|      |Date     |Temperature|Windspeed|Event    | 
-|------|---------|---------- |---------|---------|
-|  0   |07-09-20 |  32.0     | 6.0     |   Rain  |
-|  1   |08-09-20 |   28.0    |  9.0    |   Sunny |
-|  2   |09-09-20 |   28.0    |  7.0    |   Snow  |
-|  3   |10-09-20 |  32.0     |  7.0    | Rain    |
-|  4   |11-09-20 |   32.0    |  0.0    |    Rain |
-
-
-Now we also have **axis** parameter - It copies values horizontally.
-
-**For example-**
-
-        newData = df.fillna(method= "bfill", axis= "columns")
-        newData
+   *How we can identify an Outlier?*
+   
+   **1. Using Box plots**
+   
+     import seaborn as sns
+     sns.boxplot((dataset name)['(column name)'])
+   <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210129184918/2boxplot.PNG">
+   
+   **2. Using Scatter plot**
+   
+   <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210129184920/4scatterplot.jpg">
+   
+   **3. Using Z score**
+   
+   Z- Score is also called a standard score. This value/score helps to understand that how far is the data point from the mean. And after setting up a threshold value one          can utilize z score values of data points to define the outliers.
+   Zscore = (data_point -mean) / std. deviation
         
-|      |Date     |Temperature|Windspeed|Event    | 
-|------|---------|---------- |---------|---------|
-|  0   |07-09-20 |  32.0     | 6.0     |   Rain  |
-|  1   |08-09-20 |   9.0     |  9.0    |   Sunny |
-|  2   |09-09-20 |   28.0    |  28.0   |   Snow  |
-|  3   |10-09-20 |  7.0      |  7.0    |    NaN  |
-|  4   |11-09-20 |   32.0    |  32.0   |    Rain |
+         from scipy import stats
+         import numpy as np
+         z = np.abs(stats.zscore(df_boston['DIS']))
+         print(z)
+   <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210129184922/6zscore.PNG">  
+   
+   *How we can we handle an Outlier?*
+   
+  * Sometimes it’s best to completely remove those records from your dataset to stop them from skewing your analysis. We delete outlier values if it is due to data entry error,     data processing error or outlier observations are very small in numbers. We can also use trimming at both ends to remove outliers. But deleting the observation is not a good     idea when we have small dataset.
+  * Like imputation of missing values, we can also impute outliers. We can use mean, median, zero value in this methods. Since we imputing there is no loss of data. Here median     is appropriate because it is not affected by outliers.
+  * Transforming variables can also eliminate outliers. These transformed values reduces the variation caused by extreme values.Scaling, Log transformation are some of the           techniques we can use.
 
-The next parameter is **limit**
-
-Lets see the examples-
-
-As we have seen above **method="ffill"** fill the next row according to previous data.
-But by using **limit** method we can fill the row according to our choice.
-
-       newData = df.fillna(method= "ffill",limit="1")
-       newData
-
-|      |Date     |Temperature|Windspeed|Event    | 
-|------|---------|---------- |---------|---------|
-|  0   |07-09-20 |  32.0     | 6.0     |   Rain  |
-|  1   |08-09-20 |   32.0    |  9.0    |   Sunny |
-|  2   |09-09-20 |   28.0    |  9.0    |   Snow  |
-|  3   |10-09-20 |  28.0     |  7.0    | Snow    |
-|  4   |11-09-20 |   32.0    |  7.0    |    Rain |
-
-
+   #### Handling Missing Values 
+ <img src="https://analyticsindiamag.com/wp-content/uploads/2018/02/missing-values.png">
  
-  ## 4. Encoding Categorical Data
+ For checking the presence of null values, we use methods like: isnull() and notnull()
   
-   Now since the machine learning model deals only with the numerical data, but it can happen that our data set contains data other then numbers.
-   So it would create a problem since machine cannot understand words. Hence in order to deal with this situation we need to convert this data into numbers.
+  
+  <img src="https://analyticsindiamag.com/wp-content/uploads/2018/02/missing-values-1.png">
    
-   Here we importt **LabelEncoder** class of **sklearn library**.Now if their the three variables in our data set so the variables will be encoded as 0,1,2.By these values, 
-   the machine learning model may assume that there is some correlation between these variables which will produce the wrong output. So to remove this issue, **dummy encoding** is used.
-   Dummy variables are those variables which have values 0 or 1. The 1 value gives the presence of that variable in a particular column, and rest variables become 0. With dummy
-   encoding, the number of columns is equal to the number of categories.
-   
-   
-   **For Example-**
-   
-   Let’s consider the case of gender having two values male (0 or 1) and female (1 or 0). Including both the dummy variable can cause redundancy because if a person is not male in such case that person is a female, hence, we don’t need to use both the variables in regression models. This will protect us from dummy variable trap.
-   
-   For Dummy Encoding, **OneHotEncoder** class of preprocessing library is used.
-   
-   <img src="https://hackernoon.com/photos/4HK5qyMbWfetPhAavzyTZrEb90N2-3o23tie">
-   
-   **Encoding the Independent Variable**
-   
-    from sklearn.compose import ColumnTransformer
-    from sklearn.preprocessing import OneHotEncoder
-    ct=ColumnTransformer(transformers=[("encoder",OneHotEncoder(),[0])],remainder="passthrough")
-    x=np.array(ct.fit_transform(x))
-    print(x)
+   *Ways for handling missing values*
     
-  **Encoding the Dependent Variable**
+   **1. Deleting those rows:** 
+   This method is advised only when there are enough samples in the data set. One has to make sure that after we have deleted the data, there is no addition of bias. Removing      the data will lead to loss of information which will not give the expected results while predicting the output.
+   
+   <img src="https://hackernoon.com/_next/image?url=https%3A%2F%2Fcdn.hackernoon.com%2Fhn-images%2F1*a6MoK_Az0bk48nGFLVVl8g.png&w=1920&q=75">
+   
+   **2. Replacing those values with Mean/Median/Mode:**
+   
+   *For selecting which statistic will be best for filling the null values we first have to note that the column is categorical or numerical.*
+     
+  *For Categorical Feature*
+     
+  Categorical Data is the data that generally takes a limited number of possible values. Also, the data in the category need not be numerical, it can be textual in nature.
+  Here we can either delete the null values or Replace missing values with the most frequent value ie. **Mode**
+     
+   <img src="https://lh5.googleusercontent.com/GCzo2EIXFKprf04UgMAv-BVDVCOoCXtZLVvisf9_wOtg7LaYFaoSQcT5ohDFrIJ1kxR2ax5BkwPt4Fs_2yiJJwEK0W767wO0K1dFkVM9b3gImpjKjsQ617QXLiE7mcOXzaZ6ZgM3">
+   
+  *For Numerical Feature*
+   
+  Mean as a measure is greatly affected by outliers or if the distribution of the data or column is not normally-distributed. Therefore, it’s wise to first check the               distribution of the column before deciding if to use a mean imputation or median imputation. 
+     
+   *Mean imputation works better if the distribution is normally-distributed or has a Gaussian distribution, while median imputation is preferable for skewed distribution(be it     right or left)*
+   
+   Also its much better if inplace of filling the null vlaues with a particular number(mean/median), we just fill the values with random function in the IQR.
+   
+   <img src="https://miro.medium.com/max/875/1*5FkrD3kR0Z96dsobQDYkcg.png">
+   
+### *6. Data Transformation*
+
+ With data cleaning, we’ve already begun to modify our data, but data transformation will begin the process of turning the data into the proper format(s) you’ll need for          analysis and other downstream processes.
+
+**For Categorical Feature**
+
+There are two types of categorical feature that we come across:
+
+**Nominal Feature:**  A purely nominal variable is one that simply allows you to assign categories but you cannot clearly order the categories. 
+
+**Ordinal Feature:**  Ordinal data is a kind of categorical data with a set order or scale to it eg. grades, rating.
+
+Now according to the type of categorical data there are two techniques that we can use: 
+
+#### *One-hot encoding*
+
+One-Hot Encoding is another popular technique for treating categorical variables. It simply creates additional features based on the number of unique values in the categorical feature. Every unique value in the category will be added as a feature.This is mostly used for ordinal data, as separate features are created.
+
+<img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/03/Table1png.png">
+
+     from sklearn from sklearn.preprocessing import OneHotEncoder
+      onehotencoder = OneHotEncoder()
+      X = onehotencoder.fit_transform(data.Country.values.reshape(-1,1)).toarray()
+      dfOneHot = pd.DataFrame(X, columns = ["Country_"+str(int(i)) for i in range(data.shape[1])]) 
+      df = pd.concat([data, dfOneHot], axis=1)
+      df= df.drop(['Country'], axis=1) 
+      print(df.head())
+      
+ <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/02/Table3-1.png">
+ 
+  As you can see here, 3 new features are added as the country contains 3 unique values – India, Japan, and the US. In this technique, we solved the problem of ranking as each     category is represented by a binary vector.
+
+
+#### *Label Encoder*
+
+Label Encoding is a popular encoding technique for handling categorical variables. In this technique, each label is assigned a unique integer based on alphabetical ordering.
+
+    # Import label encoder 
+    from sklearn import preprocessing
+    # label_encoder object knows how to understand word labels. 
+    label_encoder = preprocessing.LabelEncoder()
+    # Encode labels in column 'Country'. 
+    data['Country']= label_encoder.fit_transform(data[‘Country']) 
+    print(data.head())
+ 
+<img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/02/table2-1.png">
+
+As you can see here, label encoding uses alphabetical ordering. Hence, India has been encoded with 0, the US with 2, and Japan with 1.
+
+### **7. Splitting of dataset**
+
+In any Machine Learning model is that we’re going to split data-set into two separate sets
+* Training Set
+* Test Set
+
+ Well here it’s your algorithm model that is going to learn from your data to make predictions. Generally we split the data-set into 70:30 ratio or 80:20 what does it mean, 70 percent data take in train and 30 percent data take in test. However, this Splitting can be varies according to the data-set shape and size.
+ 
+ <img src="https://hackernoon.com/_next/image?url=https%3A%2F%2Fcdn.hackernoon.com%2Fhn-images%2F1*Lp25zatEkHSzrbyVmVIlAw.png&w=1920&q=75">
+ 
+ **X_train is the training part of the matrix of features.**
+ 
+ **X_test is the test part of the matrix of features.**
+ 
+ **y_train is the training part of the dependent variable that is associated to X_train here.**
+ 
+ **y_test is the test part of the dependent variable that is associated to X_train here.**
+ 
+ ### **8. Feature Scaling**
+ Feature scaling is the method to limit the range of variables so that they can be compared on common grounds.
+ 
+ <img src="https://hackernoon.com/_next/image?url=https%3A%2F%2Fcdn.hackernoon.com%2Fhn-images%2F1*R8OMUmZuhfC4aYFrSiMCeg.png&w=1920&q=75">
+ 
+ See the Age and Salary column. You can easily noticed Salary and Age variable don’t have the same scale and this will cause some issue in your machine learning model.If there will be huge scale difference between the features than our algorithm give preference to the feature with higher scale.
+ 
+ **There are basically two methods fro scaling our data**
+ 
+   #### *Standardization:*
+   It is also called Z-score normalization. It calculates the z-score of each value and replaces the value with the calculated Z-score. The Z-score can be calculated by the        following formula:
+   
+   <img src="https://miro.medium.com/max/166/1*W7MW0zD9yzLbDuLXbLIHYQ.png">
+   
+   Library used: StandardScalar
+   
+      from sklearn.preprocessing import StandardScaler
+      sc=StandardScaler()
+      X_train1=sc.fit_transform(X_train)
+      X_train1[:5]
+      
+  <imgh src="https://miro.medium.com/max/875/1*E-FKlpennbj3kovI8hXGug.png">
+   
+   #### *MinMaxScaler:*
+   
+   MinMaxScaler scales all the data features in the range [0, 1] or else in the range [-1, 1] if there are negative values in the dataset.It is also referred to as          Normalization. The features are scaled between 0 and 1. Here, the mean value remains same as in Standardization, that is, 0.
+   
+   <img src="https://miro.medium.com/max/235/1*PKgWeylQWT7GIxhgTyGT3Q.png">
+   
+   Library used: MinMaxScaler
+   
+   ```from sklearn.preprocessing import MinMaxScaler 
+       scaler = MinMaxScaler()
+       X_train2=scaler.fit_transform(X_train)
+        X_train2[:5]
+   ```
+   <img src="https://miro.medium.com/max/875/1*E6GNcidsxA3WR_PaPDXrhQ.png">
+   
+   
+   ### This was all about Data Preprocessing, now after following all these steps we finalize our data for furthur applying the algorithm.
+   
     
-    from sklearn.preprocessing import LabelEncoder
-    le=LabelEncoder()
-    y=le.fit_transform(y)
-    print(y)
-    
-    
-  ## 5. Splitting the Dataset into the Training set and Test set
-  
-  <img src="https://miro.medium.com/max/948/1*4G__SV580CxFj78o9yUXuQ.png" width="800" height="500">
-  
-  This is one of the crucial step in data preprocessing where we divide dataset into training set and test set.
-  In **training set** we train the machine learning model on exisiting observations. In **test set** we evaluate the performance of our model on new observations, and these new observations are completely like the future data which we can get and on the basis of which we  will deploy the machine learning model.
-  
-    from sklearn.model_selection import train_test_split
-    x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=1)
-    print(x_train)
-    print(x_test)
-    print(y_train)
-    print(y_test)
-    
-  ## 6. Feature Scaling
-  
-  Feature scaling is the final step of data preprocessing in machine learning. It simply means to scale all the variables i.e. the features and make sure they all take up values in the same scale. This is done to prevent so that one feature don't dominate on other.
-  A machine learning model is based on Euclidean distance, and if we do not scale the variable, then it will cause some issue in our machine learning model.
-  
-  **Euclidean distance is given by:**
-  
-  <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-preprocessing-machine-learning-8.png">
-  
-  ***There are two ways to perform feature scaling in machine learning:***
-  
-  <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-preprocessing-machine-learning-9.png">
-  
-  <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-preprocessing-machine-learning-10.png">
-  
-  For feature scaling, **StandardScaler** class of sklearn.preprocessing library is imported as:
-  
-    from sklearn.preprocessing import StandardScaler
-    sc=StandardScaler()
-    x_train[:,3:]=sc.fit_transform(x_train[:,3:])
-    x_test[:,3:]=sc.transform(x_test[:,3:])
-    print(x_train)
-    print(x_test)
+   
+   
+
+   
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+   
+   
+     
+     
+   
+   
+
+

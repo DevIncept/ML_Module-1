@@ -1,121 +1,188 @@
-### **What is Exploratory Data Analysis(EDA)?**
+# Explortary Data Analysis
+_Analyze and Summarize Data_
 
-* It’s often the first step in data analysis, implemented before any other techniques. It is an approach for summarizing, visualizing, and becoming intimately familiar with the important characteristics of a data set.
-* It consists techniques that are used to gain some insights on the dataset before doing any modeling.
-* EDA, is essentially a type of storytelling for statisticians. It allows us to uncover patterns and insights, often with visual methods, within data.
-* EDA is not a set of rules to follow, it is our state of mind. 
+![](https://i.pinimg.com/474x/90/8a/7d/908a7dbe1cc473f9508df70ff869c056.jpg)
 
-### **Purpose of EDA:**
-* It is basically used to filter data from redundancies.
-* It helps us to identify the faulty points in data and to understand the relationships between variables.
-* Gain maximum insight into the data set and its underlying structure.
-* Identify the most influential variables
-* EDA is used to gain some statistics and perform visualizations for better understanding of data, and finds some information about the tendencies of the data, its quality and have some assumptions for the hypothesis test.
-* EDA is NOT about making fancy visualizations or even aesthetically pleasing ones; the goal is to try and answer questions with data. 
-* We should be able to create a figure which should be undersandable to others in a couple of seconds 
-* EDA plays an important role in data analysis. We should always check the quality of data even if it provided in platter.
-* Data Cleaning is an application of EDA where we can clarify our doubt if our data reaches the expectations or not.
+## What is it?
+EDA or Explortary data analysis is an important concept for Machine Learning for ensuring the data analysis and processing before the training. Originally developed by American mathematician John Tukey in the 1970s, EDA techniques continue to be a widely used method in the data discovery process today.
 
-#### Steps involved in EDA:
-> Understand the data
+Some points on EDA:
+1. Suggest hypotheses about the causes of observed phenomena.
+2. Assess assumptions on which statistical inference will be based.
+3. Support the selection of appropriate statistical tools and techniques.
+4. Provide a basis for further data collection through surveys or experiments.
 
-> Clean the data
+Importance:
+The main purpose of EDA is to help look at data before making any assumptions. It can help identify obvious errors, as well as better understand patterns within the data, detect outliers or anomalous events, 
+find interesting relations among the variables.
 
-> Analysis of relationship between variables
+Data scientists can use exploratory analysis to ensure the results they produce are valid and applicable to any desired business outcomes and goals. 
+EDA also helps stakeholders by confirming they are asking the right questions. EDA can help answer questions about standard deviations, 
+categorical variables, and confidence intervals. Once EDA is complete and insights are drawn, its features can then be used for more sophisticated data analysis or modeling, 
+including machine learning.
+Recognising patterns,spot anomalies,test hypothesis and to check assumptions with the help of summary statistics and graphical representations are the jest of EDA.
 
-### **Methods for exploratory data analysis:**
-It is good to explore the data through various EDA techniques and compare them. Once the data set is fully understood, it is quite possible that data scientist will have to go back to data and cleansing phases in order to transform the data set according to the desired outcomes. 
-###### Methods for EDA are:
-*	**Univariate visualization :-** provides summary statistics for each field in the raw data set
-*	**Bivariate visualization  :-** is performed to find the relationship between each variable in the dataset and the target variable of interest
-*	**Multivariate visualization :-**  is performed to understand interactions between different fields in the dataset
-*	**Dimensionality reduction :-**  helps to understand the fields in the data that account for the most variance between observations and allow for the processing of a reduced volume of data. 
+## Types of exploratory data analysis
 
+Four types of EDA:
+#### 1. Univariate graphical
+When the data has only one variable, but done with graphical representations.
 
-Through these methods, the data scientist validates assumptions and identifies patterns that will allow for the understanding of the problem and model selection and validates that the data has been generated in the way it was expected to.
+Non-graphical methods don’t provide a full picture of the data. Graphical methods are therefore required.
 
+#### 2. Univariate non-graphical
+When the data has only one variable, but done with non graphical representations.
 
-### **Is skipping Exploratory Data Analysis a good idea?**
-NO,In a hurry to get to the machine learning stage or simply impress business stakeholders very fast, data scientists tend to either entirely skip the exploratory process or do a very shallow work. It is a very serious and, sadly, common mistake of amateur data science consulting “professionals”.
+This is simplest form of data analysis, where the data being analyzed consists of just one variable. Since it’s a single variable, it doesn’t deal with causes or relationships. The main purpose of univariate analysis is to describe the data and find patterns that exist within it.
 
-Such behaviour can lead to skewed data, with outliers and too many missing values and, therefore, some sad outcomes for the project:
-* generating inaccurate models;
-* generating accurate models on the wrong data;
-* choosing the wrong variables for the model;
-* inefficient use of the resources, including the rebuilding of the model.
+#### 3. Multivariate nongraphical
+When the data has multiple variable, but done with non graphical representations.
 
-There are a lot of ways to reach these goals as follows:
-1.	Import the data
-2.	Get a feel of the data ,describe the data,look at a sample of data like first and last rows
-3.	Take a deeper look into the data by querying or indexing the data
-4.	Identify features of interest
-5.	Recognise the challenges posed by data - missing values, outliers
-6.	Discover patterns in the data
+Multivariate data arises from more than one variable. Multivariate non-graphical EDA techniques generally show the relationship between two or more variables of the data through cross-tabulation or statistics.
 
->One of the important things about EDA is Data profiling.
+#### 4. Multivariate graphical
+When the data has multiple variable, but graphically representations.
 
-**Data profiling**  is concerned with summarizing your dataset through descriptive statistics. The goal of data profiling is to have a understanding of the data so that you can start querying and visualizing the data in various ways. Depending on the result of the data profiling, you might decide to correct, discard or handle your data differently.
+Multivariate data uses graphics to display relationships between two or more sets of data. The most used graphic is a grouped bar plot or bar chart with each group representing one level of one of the variables and each bar within a group representing the levels of the other variable.
 
+## Some Important components:-
 
-### **Visualizing data**
-* Data visualization is the graphical representation of data.  It contains statistical graphics, plots, information graphics and many more to explore the data easily.
-* Your goal should be to be able to create a figure which someone can look at in a couple of seconds and understand what is going on. 
-* If not, the visualization is too complicated (or fancy) and something similar should be used.
-* EDA is also very iterative since we first make assumptions based on our first exploratory visualizations, then build some models. 
-* We then make visualizations of the model results and tune our models.
+Some important components od EDA that makes the analyisis efficient.
+#### 1. Data selection/collection and quality
+#### 2. Statistical analysis
+#### 3. Quantitative and Qualitative Analysis
+#### 4. Visualisation
+#### 5. Summarized Story
+Lets understand these components one by one.
 
+## Data selection/collection and quality
+Data selection/collection is most important if you are doing a independent project or a company project. The data quality is what decides the fate of the model as well as the practical applicability.
+_If the dataset is biased_ or uneven displaying a different picture of the area rather than the _true picture_, then the resulting model will be biased and would be incapable for real life implimentation. Thus the focus is on data rather than the model. 
 
-***Summary Statistics:***
- >•	*Summary statistics are measurements meant to describe data. Examples of summary/ descriptive statistics for a single numerical variable is the mean, median, mode, max, min, range, quartiles/percentiles, variance, standard deviation, coefficient of determination, skewness and kurtosis.* 
->•	*Summary statistics for categorical variables is the number of distinct counts.The most basic summary statistic for text data is term frequency and inverse document frequency.For bivariate data, the summary statistics is the linear correlation, chi-squared, or the p value based z-test, t-test or analysis of variance.*
+## Statistical analysis
+The statistical parameters define and helps in analysis of the dataset mathematically.
 
+- Estimate a Central Tendency for your Data
+- Mean, Mode, Median
+- Distribution
+- Categories and frequencies
+- Standard Deviation
+- probability distribution
 
-* In addition to summary statistics, visualizations can be used to explore and describe data. 
-* Examples of visualizations for numeric data are line charts with error bars, histograms, box and whisker plots, for categorical data bar charts and waffle charts, and for bivariate data are scatter charts or combination charts.
+All such parameters are important for statistical testing.They provide insights on the range and distribution of dataset.
 
+Here we can see *describe method* is used which provides the normal statistical insights on every attribute of the tabular dataset present here.
+![](https://i.pinimg.com/564x/f4/23/c5/f423c5d38679a4f7f7c4e22c4e81a78b.jpg)
 
-Some examples of plots used for EDA are:
+## Quantitative Test
 
-* Histograms
-* Scatter plots
-* Pair plots
-* Box plots
-* Violin plots
-* Distribution Plots
+Quantitative EDA techniques provide a more rigorous method of determining the key properties of a dataset. Two of the most important of these techniques are
 
-### **Histograms:** 
-*	It is used in univariate analysis, they give a rough sense of density of underlying distribution of data more precisely probability distribution of data. 
-*	The plotting of the histogram depends upon ‘bins’ i.e dividing the entire range into series of interval then based upon the number of values present inside a range of a bin the height of the bar of that bin is determined.
-![](https://www.mathworks.com/help/examples/matlab/win64/ChangeNumberOfHistogramBinsExample_03.png)
+-Interval estimation.
+-Hypothesis testing.
 
-### **Scatter plot:**
-*	A scatter plot is a type of plot which uses X and Y coordinates on a 2d plane to display points. 
-*	It is a well known plotting technique to study the interdependence of one variable over other.
-![](https://lh3.googleusercontent.com/proxy/z-R0-szEidUIGzSg9y2_rMpn0YlszPtp4e36r2iLKCDOjGsE6YTEWZNXN5j-WRBxdnG26wLccwk9YU2OJdd9cDiCg5pAU8LxZCfI4-YmXHncW05dlDeyBw)
+Interval estimates are used to create a range of values within which a variable is likely to fall.
 
-### **PairPlot:**
-*	This is a extension to scatter plots and histogram and its PDF representation. 
-*	This is primarily used when we want to study the behavior of all variables with every other variables when the data is more than 2-Dimension.
-![](https://i.stack.imgur.com/b6JdS.png)
+## Visualisation
 
-### **Boxplot:**
-*	These are fairly complex types of plots ,these are used to represent data according to their quartiles. 
-*	They also have lines extending vertically from the boxes indicating the variance outside the upper and lower quartile .
-*	The Space between different parts of the box indicate the variance(Spread) of the data. 
-*	It also helps in detection of outliers
-![](https://miro.medium.com/max/18000/1*2c21SkzJMf3frPXPAR_gZA.png)
+This is again a main component that provides insights graphically provides more patterns for understanding the dataset.
+General plots used are :
+1. Histogram
+```
+sns.histplot(data = data, x  = 'platelets')
+```
+![](https://i.pinimg.com/originals/d6/3e/a6/d63ea676d6da5e50831590f423fa41ef.jpg) 
 
-### **Voilon Plot:**
-*	It is a extension of box plots in this the kernel density plot is also plotted with box plots .
-*	A violin plot is better than a plain box plot as a box plot only shows summary statistics such as mean/median and interquartile ranges, the violin plot shows the full distribution of the data.
-![](https://images.ctfassets.net/fi0zmnwlsnja/sdfgtcRp16wTNOcRceGQm/5bfcb73d2261d49ff20dd7857e0152b1/Screen_Shot_2019-03-01_at_11.36.10_AM.png)
+3. Scatter plot
+```
+sns.scatterplot(data = data, x  = 'age', y = 'platelets' )
+```
+![](https://i.pinimg.com/originals/7d/c3/21/7dc32143fb82ff445b76341311f14b65.jpg)
 
-### **Distribution plots:**
-*	These plots are used to know distribution of attributes whether they are normally distributed or skewed distributed. 
-*	You can select multiple feature distributions and compare them side by side that is the beauty of plotly very interactive.
-![](https://support.minitab.com/en-us/minitab-express/1/distribution_plot_normal_vary_parameters.xml_Graph_cmd1o1.png)
+5. Bar Plot
+```
+sns.barplot(data = data.head(), x  = 'age', y = 'creatinine_phosphokinase' )
+```
+![](https://i.pinimg.com/originals/ae/b4/fa/aeb4fa3a4783679bbbc0315d24817732.jpg)
 
+7. line plot
+```
+sns.lineplot(data = data, x  = 'age', y = 'creatinine_phosphokinase' )
+```
+![](https://i.pinimg.com/originals/24/01/9e/24019e4dc6f77b43d628a3941b9d9c22.jpg)
 
+8. pie chart
+```
+plt.figure(figsize= (4,4))
+percent = data['DEATH_EVENT'].value_counts()
+val = percent.index
+plt.pie(percent.values, labels = val,autopct="%1.1f%%")
+plt.legend()
+plt.show()
+```
+![](https://i.pinimg.com/originals/fb/32/c6/fb32c65ea22329297004995ef5e6e771.jpg)
 
+10. box plot
+11. Density plot
+       ....and more
 
+Some Libraries used:
 
+1. matplotlib
+2. seaborn
+3. bokeh
+4. ggplot
+5. pygal
+6. Plotly
+7. geoplotlib
+8. Gleam
+9. missingno
+10. Leather
+
+All these libraries helps in providing space for graphical respresentations, to clarify things visually.
+
+```
+import matplotlib.pyplot as plt 
+import seaborn as sns
+```
+This is two of the libraries which are imported with these alias.
+
+```
+sns.kdeplot(data = data, x = "age", hue = "DEATH_EVENT",
+            common_norm = False, shade = True)
+```
+![](https://i.pinimg.com/564x/d2/25/71/d2257160d9f6d7a50153fd2dccf012b8.jpg)
+
+This is the example with same dataset.
+
+## Auto visualisation
+
+There are some libraries for automating the visualisation process, some are:
+1. Panda Profiling
+2. Sweet Viz
+3. Auto Viz
+4. D - Tale
+
+## Softwares or Tools for EDA:
+
+1. JMP, an EDA package from SAS Institute.
+2. KNIME, Konstanz Information Miner – Open-Source data exploration platform based on Eclipse.
+3. Orange, an open-source data mining and machine learning software suite.
+
+Some of the most common data science tools used to create an EDA include:
+
+4. Python: An interpreted, object-oriented programming language with dynamic semantics. Its high-level, built-in data structures, 
+combined with dynamic typing and dynamic binding, make it very attractive for rapid application development, 
+as well as for use as a scripting or glue language to connect existing components together. Python and EDA can be used together to identify missing 
+values in a data set, which is important so you can decide how to handle missing values for machine learning.
+5. R: An open-source programming language and free software environment for statistical computing and graphics supported by the R 
+Foundation for Statistical Computing. The R language is widely used among statisticians in data science in developing statistical observations 
+and data analysis.
+
+## Summarized Story
+
+Data Analysis is all about story telling if you want to explain the results to someone don't have any experience with data analysis.
+
+>the better the story, the better understanding of your customers or for those whom you want to present the data. 
+
+Its all over the user, play with data wisely to get awesome results that can make difference.
